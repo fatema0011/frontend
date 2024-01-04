@@ -1,0 +1,190 @@
+.reservationContainer {
+  max-width: 1298px;
+  margin: 0 auto;
+  padding: 50px;
+}
+.reservationContent {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.phone {
+  margin: 147px auto 129px auto;
+  justify-content: space-between;
+}
+.phn {
+  width: 70px;
+  height: 70px;
+  padding: 5.6px, 2.8px, 2.8px, 2.8px;
+}
+.phneText {
+  width: 320px;
+  height: 116px;
+}
+.phneText h4 {
+  font-family: Roboto;
+  font-size: 28px;
+  color: #000000;
+  text-align: left;
+}
+.phneText p {
+  font-size: 16px;
+  text-align: left;
+  color: #6e6d6d;
+}
+.juice {
+  width: 242px;
+  height: 266px;
+  margin-top: 146px;
+}
+.snacks {
+  width: 366px;
+  height: 251px;
+  margin-left: 0 auto 103px 252px;
+}
+.note {
+  width: 366px;
+  height: 251px;
+}
+.note img {
+  width: 70px;
+  height: 70px;
+}
+.noteText {
+  width: 371px;
+  height: 33px;
+  font-family: Roboto;
+}
+.note h3 {
+  width: 371px;
+  height: 33px;
+  font-size: 28px;
+  text-align: left;
+}
+.note p {
+  font-size: 16px;
+  text-align: left;
+}
+/* Another part staer here */
+#reservation {
+  max-width: 1404px;
+  position: relative;
+}
+.reservationHeader {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+.reservationHeader h2 {
+  color: #0d0c0c;
+  font-size: 42px;
+}
+.reservationHeader p {
+  font-family: Imperial Script;
+  font-size: 40px;
+  color: #f16214;
+}
+.heading {
+  text-align: center;
+  font-size: 28px;
+  color: #000000;
+  margin-top: 63px;
+}
+#reservationContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.leftImage {
+  width: 372px;
+  height: 488px;
+}
+.rightImage {
+  width: 317px;
+  height: 521px;
+  margin-bottom: 166px;
+}
+.cardContent {
+  background-image: linear-gradient(
+      0deg,
+      rgba(14, 10, 12, 0.795),
+      rgba(14, 10, 12, 0.795)
+    ),
+    url("../Components/Assets/book\ table.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 77px 12px;
+  width: 513px;
+  height: 437px;
+  border-radius: 10px;
+  margin-bottom: 166px;
+}
+.reservationForm {
+  width: 338px;
+  height: 318px;
+  border-radius: 10px;
+  border-radius: 10px;
+  margin: auto;
+}
+.reservationInputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 234px;
+}
+.reservationInfoInputGroup {
+  width: 288px;
+  border-radius: 30px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.reservationInfoInputGroup input {
+  padding: 10px;
+  width: 288px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid orangered;
+  background: transparent;
+  color: #ffffff;
+}
+.reservationInputGroup .reservationUserInfoGroup {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+.reservationUserInfoGroup input {
+  background: transparent;
+  padding: 10px;
+  width: 165px;
+  height: 38px;
+  border-radius: 10px;
+  border: 1px solid orangered;
+  border-radius: 10px;
+  color: #ffffff;
+}
+.bookedBtnContainer {
+  margin-top: 36px;
+  text-align: center;
+}
+.bookedBtn {
+  width: 172px;
+  height: 54px;
+  border-radius: 10px;
+  gap: 10px;
+  background: #f16214;
+  color: #e7e7e7;
+  padding: 16px 30px;
+  border: none;
+}
+.icon {
+  position: relative;
+  width: 288px;
+}
+
+.icon1 {
+  position: relative;
+  width: 165px;
+}

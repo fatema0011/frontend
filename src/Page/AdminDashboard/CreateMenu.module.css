@@ -1,0 +1,27 @@
+.createMenu {
+  width: 600px;
+  margin: 0 auto;
+  background-color: rgb(237, 237, 237);
+  padding: 30px;
+  border-radius: 20px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.createMenu input {
+  height: 80px;
+  font-size: 25px;
+  padding-left: 20px;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+}
+.submit {
+  background-color: #f16214;
+  color: white;
+  width: 250px;
+  margin: auto;
+  cursor: pointer;
+}

@@ -1,0 +1,12 @@
+.orderContainer {
+  background-color: white;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+.button {
+  margin-top: 10px;
+}

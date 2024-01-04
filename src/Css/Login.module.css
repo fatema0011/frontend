@@ -1,0 +1,101 @@
+.loginPage {
+  color: white;
+}
+.baner {
+  background-image: linear-gradient(
+      0deg,
+      rgba(14, 10, 12, 0.795),
+      rgba(14, 10, 12, 0.795)
+    ),
+    url("../Components/Assets/login_baner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.baner p {
+  font-size: 42px;
+  font-weight: 700;
+}
+.loginContainer {
+  background-image: linear-gradient(
+      0deg,
+      rgba(14, 10, 12, 0.795),
+      rgba(14, 10, 12, 0.795)
+    ),
+    url("../Components/Assets/loginPage_Bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 70px;
+  gap: 50px;
+}
+.loginLeft{
+  width: 50%;
+}
+.loginRight {
+  width: 640px;
+  background-image: linear-gradient(
+      0deg,
+      rgba(14, 10, 12, 0.229),
+      rgba(14, 10, 12, 0.169)
+    ),
+    url("../Components/Assets/login_Bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 80px 40px;
+  border-radius: 10px;
+}
+.loginRight p {
+  font-size: 20px;
+}
+.form {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.loginRight input {
+  height: 74px;
+  width: 484px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #353847;
+  color: white;
+}
+input.btn {
+  height: 50px;
+  width: 120px;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: #f16214;
+  color: white;
+  font-weight: 700;
+}
+.contactWith {
+  margin-top: 50px;
+}
+.contactIcon {
+  margin-top: 15px;
+  display: flex;
+  gap: 20px;
+}
+.alreadyHave {
+  margin-top: 20px;
+  font-size: 12px;
+  text-align: center;
+}
+.alreadyHave span {
+  color: #f16214;
+}

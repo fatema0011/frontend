@@ -1,0 +1,22 @@
+.product {
+  padding: 50px 0;
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.product > p {
+  font-size: 40px;
+  font-family: Imperial Script;
+  color: #f16214;
+}
+h2 {
+  font-size: 42px;
+}
+.items {
+  padding: 0 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}

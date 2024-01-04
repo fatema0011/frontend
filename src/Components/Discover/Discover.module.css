@@ -1,0 +1,49 @@
+.discover {
+  padding: 0 70px;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+}
+.discover > p {
+  font-size: 40px;
+  font-family: Imperial Script;
+  color: #f16214;
+}
+h2 {
+  font-size: 42px;
+}
+.items {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr;
+}
+.item {
+  height: 193px;
+  width: 640px;
+  border-radius: 100px;
+  background: #0d1518;
+  gap: 30px;
+  padding: 60px;
+  display: flex;
+}
+.logo img {
+  height: 50px;
+  width: 50px;
+}
+.text {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.title {
+  color: #f16214;
+  font-size: 25px;
+  font-weight: 700;
+}
+.desc {
+  color: white;
+  line-height: 2;
+}

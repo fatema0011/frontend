@@ -1,0 +1,32 @@
+.drow_menu_container {
+  position: relative;
+  background-color: transparent;
+  color: white;
+}
+.drow_menu_container button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.drop_menu_content {
+  position: absolute;
+  overflow: hidden;
+  top: 40px;
+  left: -50px;
+  background-color: #f16214;
+  width: 200px;
+  border-radius: 6px;
+  max-height: 0;
+  transition: 0.3s;
+}
+.drow_menu_container button:focus ~ .drop_menu_content {
+  max-height: 100vh;
+}
+.drop_menu_content li {
+  transition: 0.3s;
+  padding: 12px;
+}
+.drop_menu_content li:hover {
+  background-color: rgb(210, 83, 15);
+}

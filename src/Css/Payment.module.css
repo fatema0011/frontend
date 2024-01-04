@@ -1,0 +1,287 @@
+.paymentSection {
+  max-width: 1298px;
+  margin: auto;
+}
+.paymentHeader {
+  font-size: 28px;
+  font-family: "Roboto", sans-serif;
+}
+.paymentContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.paymentContainerOne {
+  display: flex;
+  flex-direction: column;
+}
+.paymentType {
+  width: 640px;
+  height: 370px;
+}
+.method {
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
+  text-align: left;
+  margin: 20px 0;
+}
+.cardDiv {
+  width: 640px;
+  height: 304px;
+  background: #0d1518;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  background: #0d1518;
+  padding: 37px 47px;
+}
+.card {
+  width: 263px;
+  height: 108px;
+  background: #f3f3f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.cardContent {
+  margin: 12px 46px;
+  gap: 10px;
+  display: flex;
+}
+.circle {
+  width: 26px;
+  height: 26px;
+  border: 1px solid orangered;
+  border-radius: 100px;
+}
+/* card number 2 */
+.cardContainer2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 30px 24px;
+  gap: 15px;
+}
+.inputText {
+  font-size: 16px;
+  color: #fff;
+}
+.input1 input {
+  width: 286px;
+  height: 62px;
+  border-radius: 6px;
+  gap: 20px;
+}
+/* card number 3 */
+.threeInput {
+  display: flex;
+  gap: 15px;
+}
+.input2 input {
+  width: 588px;
+  height: 62px;
+  border-radius: 6px;
+}
+.input3 input {
+  width: 185px;
+  height: 62px;
+  border-radius: 6px;
+}
+/* Right column start here */
+.paymentContainerTwo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.upper {
+  width: 639px;
+  height: 713px;
+  background-image: linear-gradient(
+      0deg,
+      rgba(14, 10, 12, 0.795),
+      rgba(14, 10, 12, 0.795)
+    ),
+    url("../Components/Assets/payment//peoples.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.tittle {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  height: 59px;
+  padding: 18px 66px 12px 66px;
+  margin: 30px 68px 24px 37px;
+  border-radius: 10px;
+  border: 1px solid orangered;
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+}
+.product {
+  color: #0d1518;
+}
+.price {
+  color: #0d1518;
+}
+.total {
+  color: #0d1518;
+}
+.tittleDescription {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  height: 100px;
+  margin: 30px 44px 20px 37px;
+  border-radius: 10px;
+  border: 1px solid orangered;
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+}
+.breadText {
+  margin: 0;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+.breadInfo {
+  display: flex;
+  width: 199px;
+  height: 100px;
+}
+.addRemove {
+  height: 85px;
+  border-radius: 6px;
+}
+.numberIcon {
+  display: flex;
+  align-items: center;
+  width: 71px;
+  height: 42px;
+  border-radius: 6px;
+  margin-top: 20px;
+}
+.number {
+  width: 49px;
+  height: 42px;
+  border-radius: 6px;
+  background: #f16214;
+  color: #fff;
+}
+.icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  width: 22px;
+  height: 42px;
+  border-radius: 6px;
+}
+
+.price2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  color: #ffffff;
+}
+.product {
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+}
+.total {
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+}
+.horaizontal {
+  width: 559px;
+  border: 1px;
+  background: #f16214;
+}
+.price {
+  width: 43px;
+  height: 29px;
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  margin: 35px 4px 38px 0px;
+  color: #ffffff;
+}
+.lastIcon {
+  width: 24px;
+  height: 24px;
+  margin: 35px 4px 38px 0px;
+  border: 2px;
+}
+
+/* another div */
+.lower {
+  width: 640px;
+  height: 568px;
+  border-radius: 10px;
+  background-image: linear-gradient(
+      0deg,
+      rgba(14, 10, 12, 0.795),
+      rgba(14, 10, 12, 0.795)
+    ),
+    url("../Components/Assets/payment/peoples.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.textPrice {
+  width: 500px;
+  height: 423px;
+  gap: 15px;
+}
+.priceChart {
+  width: 500px;
+  height: 351px;
+  border: 1px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 72px 70px;
+  font-family: "Roboto", sans-serif;
+}
+.price1 {
+  font-size: 20px;
+  color: #ffffff;
+  border-bottom: 1px solid #f16214;
+}
+.price3 {
+  font-size: 20px;
+  color: #ffffff;
+  width: 250px;
+  padding: auto;
+  border-bottom: 1px solid #f16214;
+  border-left: 1px solid #f16214;
+}
+.confirm {
+  width: 500px;
+  height: 57px;
+  border: 1px solid orangered;
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  color: #ffffff;
+  background: transparent;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+  margin: auto 70px 73px 70px;
+}
+.images {
+  width: 100%;
+  height: 296px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  margin: 130px auto;
+}
+.images img {
+  width: 305px;
+  height: 296px;
+  border-radius: 10px;
+}

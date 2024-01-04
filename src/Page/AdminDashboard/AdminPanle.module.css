@@ -1,0 +1,64 @@
+.adminpanel {
+  display: flex;
+  min-height: 80vh;
+}
+.menuBar {
+  background-color: rgb(237, 237, 237);
+  padding-left: 50px;
+  display: flex;
+  align-items: center;
+}
+.menuBar ul {
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+  justify-content: space-around;
+}
+.menuBar ul li {
+  padding-left: 50px;
+  color: #f16214;
+  width: 300px;
+  height: 80px;
+  border: 1px solid #f16214;
+  border-right: none;
+  font-size: 25px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+.menuBar ul li.active {
+  color: white;
+  background-color: #f16214;
+  font-weight: 700;
+}
+.adminBar {
+  flex: 1;
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.adminBar > div {
+  /* padding-top: 50px; */
+  display: none;
+}
+.adminBar > div.active {
+  display: block;
+}
+.adminBar h1 {
+  padding-block: 25px;
+  text-align: center;
+  width: 100%;
+}
+.menu,
+.order {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.order {
+  background-color: rgba(229, 229, 229, 0.409);
+  padding: 30px;
+  border-radius: 10px;
+}

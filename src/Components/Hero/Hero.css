@@ -1,0 +1,47 @@
+.hero {
+  min-height: 90vh;
+  background-image: linear-gradient(
+      0deg,
+      rgba(14, 10, 12, 0.795),
+      rgba(14, 10, 12, 0.795)
+    ),
+    url("../Assets/hero_background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.hero_left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: white;
+}
+.welcome {
+  font-family: "Imperial Script", cursive;
+  color: #f16214;
+  font-size: 40px;
+}
+h1 {
+  font-size: 50px;
+  width: 500px;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.btn {
+  display: flex;
+  gap: 30px;
+}
+.hero_right {
+  flex: 1;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
