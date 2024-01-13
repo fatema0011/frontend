@@ -9,8 +9,8 @@ const Dropdown = (props) => {
         <img src={drop_down} alt="icon" />
       </button>
       <ul className="drop_menu_content">
-        {props.links.map((link) => (
-          <li>{link}</li>
+        {props.links.map((link, index) => (
+          <li key={index}>{link}</li>
         ))}
       </ul>
     </div>

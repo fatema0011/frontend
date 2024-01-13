@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import style from "./CreateMenu.module.css";
-
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const CreateMenu = () => {
   const [title, setTitle] = useState("");
   const [price, setPrice] = useState("");
@@ -27,14 +28,12 @@ const CreateMenu = () => {
       });
 
       if (response.ok) {
-        // Handle successful upload
-        console.log("Menu item uploaded successfully!");
+        toast.success('Menu item uploaded successfully!');
       } else {
-        // Handle upload error
-        console.error("Failed to upload menu item.");
+        toast.error('Failed to upload menu item.');
       }
     } catch (error) {
-      console.error("Error uploading menu item:", error);
+      toast.error('Failed to upload menu item.');
     }
   };
 
@@ -68,6 +67,7 @@ const CreateMenu = () => {
           <input className={style.submit} type="submit" value="Upload" />
         </form>
       </div>
+      <ToastContainer />
     </div>
   );
 };

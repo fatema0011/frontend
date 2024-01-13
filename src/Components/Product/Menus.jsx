@@ -48,10 +48,11 @@ const Menus = () => {
         <div key={menu._id} className={style.item}>
           <img src={`http://localhost:5000/${menu.photo}`} width= "200px" height="200px"alt="Menu" />
           <p className={style.title}>{menu.title}</p>
-          <p className={style.price}>{menu.price}</p>
-          <div className={style.rating}>
+          <p className={style.price}>${menu.price}</p>
+        
+          {/* <div className={style.rating}>
             ({menu.rating})
-          </div>
+          </div> */}
           <div className={style.button}>
           <AddToCart
               text={"Add to Cart"}

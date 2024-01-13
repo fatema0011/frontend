@@ -33,13 +33,14 @@ const Contact = () => {
             <input type="text" name="info" placeholder="Name" />
             <input type="text" name="info" placeholder="Your Email address" />
             <input type="text" name="info" placeholder="Your Phone Number" />
+            
             <textarea
               className={style.msg}
               type="text"
               name="info"
               placeholder="Your Message"
             />
-
+riya
             <div>
               <button className={style.btn} type="submit">Submit</button>
             </div>

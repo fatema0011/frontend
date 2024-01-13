@@ -1,5 +1,6 @@
 import React from "react";
-
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import style from "../Css/Reservation.module.css";
 import phn from "../Components/Assets/phone.png";
 import juice from "../Components/Assets/juice.png";
@@ -25,33 +26,39 @@ const Reservation = () => {
     });
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      const response = await fetch(
-        "http://localhost:5000/customer/reservations",
-        {
-          method: "POST",
-          credentials: "include",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        }
-      );
-
-      if (!response.ok) {
-        throw new Error("Network response was not ok");
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  try {
+    const response = await fetch(
+      "http://localhost:5000/customer/reservations",
+      {
+        method: "POST",
+        credentials: "include",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
       }
+    );
 
-      const data = await response.json();
-      console.log("Reservation created:", data);
-      // Optionally, you can redirect the user or perform other actions upon successful reservation submission
-    } catch (error) {
-      console.error("Error creating reservation:", error);
+    if (!response.ok) {
+      throw new Error("Network response was not ok");
     }
-  };
 
+    // Show success notification
+    toast.success("Reservation submitted successfully", {
+      position: toast.POSITION.TOP_RIGHT,
+    });
+
+  } catch (error) {
+    // Show error notification
+    toast.error("An error occurred while submitting the reservation", {
+      position: toast.POSITION.TOP_RIGHT,
+    });
+
+    console.error('Error:', error);
+  }
+};
   return (
     <div>
       <div className={style.reservationContainer}>
@@ -130,9 +137,9 @@ const Reservation = () => {
                     </div>
                     <div className={style.icon1}>
                       <input
-                        type="text"
-                        name="date"
-                        placeholder="Date"
+                        type="time"
+                        name="time"
+                        placeholder="time"
                         onChange={handleInputChange}
                       />
                     </div>
@@ -140,7 +147,7 @@ const Reservation = () => {
                       <input
                         type="date"
                         name="date"
-                        placeholder="Date"
+                        placeholder="date"
                         onChange={handleInputChange}
                       />
                     </div>

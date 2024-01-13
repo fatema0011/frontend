@@ -42,7 +42,7 @@
   display: none;
 }
 .adminBar > div.active {
-  display: block;
+  display: inline-block;
 }
 .adminBar h1 {
   padding-block: 25px;

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styles from './OrderedMenus.module.css'; // Import CSS module
+import Button from '../../Components/Button/Button';
 
 const OrdersWithMenuDetails = () => {
   const [ordersWithMenus, setOrdersWithMenus] = useState([]);
@@ -64,20 +65,36 @@ const OrdersWithMenuDetails = () => {
       <h1>Ordered Menus</h1>
       <table className={styles['orders-table']}>
         {/* Table headers */}
+        <thead>
+          
+          <tr>
+            <th>User ID</th>
+            <th>User Name</th>
+            <th>Menu  ID</th>
+            <th> Menu Name</th>
+            <th>Price</th>
+            <th>Payment Status</th>
+          </tr>
+        </thead>
         <tbody>
           {ordersWithMenus.map(order => (
             <tr key={order._id}>
               <td>{order._id}</td>
+              <td>{order.user.name}</td>
               <td>{order.menuId}</td>
+              {/* <td>{order.menuId}</td> */}
               <td>{order.menu && order.menu.title}</td>
               <td>{order.menu && order.menu.price}</td>
-              <td>{order.menu && `${order.payment}`}</td>
+              <td>{order.menu && order.payment ? 'Payment Completed' : 'Payment Pending'}</td>
             </tr>
           ))}
         </tbody>
       </table>
-      <p className={styles['total-price']}>Total Price of All Orders: {totalOrderPrice}</p>
-      <button onClick={handlePayment}>Process Payment</button>
+    <div className={styles.payment}>
+    <p className={styles['total-price']}>Total Price of All Orders: {totalOrderPrice}</p>
+      <button className={styles.btn} onClick={handlePayment}>Process Payment</button>
+    </div>
+      
     </div>
   );
 };

@@ -8,8 +8,8 @@ const Discover = () => {
       <p>Discover</p>
       <h2>Our Specialist Cuisine</h2>
       <div className={style.items}>
-        {discover_items.map((e) => (
-          <div className={style.item}>
+        {discover_items.map((e, i) => (
+          <div key={i} className={style.item}>
             <div className={style.logo}>
               <img src={e.image} alt="logo" />
             </div>

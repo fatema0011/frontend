@@ -80,7 +80,7 @@ const Navbar = () => {
           </Link>
           <Dropdown links={services} />
         </li>
-        <li>
+        {/* <li>
           <Link
             to="/gallery"
             style={{ textDecoration: "none", color: "inherit" }}
@@ -89,7 +89,7 @@ const Navbar = () => {
             Gallery
           </Link>
           <Dropdown links={gallery} />
-        </li>
+        </li> */}
         <li>
           <Link
             to="/contact"
@@ -102,15 +102,16 @@ const Navbar = () => {
       </ul>
 
       <ul className="searchBar">
-        <li className="search">
+        {/* <li className="search">
           <input type="text" name="search" id="search" />
           <img src={search_icon} alt="icon" />
-        </li>{" "}
+        </li>{" "} */}
         <li>
           <Link to="/cart">
-            <img src={cart} alt="cart" />
+            {/* <img src={cart} alt="cart" /> */}
+         <Button text={"My order"}/>
           </Link>
-          <p className="counter">0</p>
+          {/* <p className="counter">0</p> */}
         </li>
         <li>
           {isLoggedIn ? (

@@ -18,6 +18,8 @@ import AdminPanel from "./Page/AdminDashboard/AdminPanel";
 import AdminPrivateRoutes from "./AdminPrivateRoutes";
 import AdminLogin from "./Page/AdminLogin";
 import AdminSignUp from "./Page/AdminSignUp";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const App = () => {
   return (
     <div>
@@ -45,6 +47,8 @@ const App = () => {
         </Routes>
         <Footer />
       </BrowserRouter>
+
+
     </div>
   );
 };

@@ -110,8 +110,8 @@ const Menus = () => {
               alt="Menu"
             />
             <p className={style.title}>{menu.title}</p>
-            <p className={style.price}>{menu.price}</p>
-            <div className={style.rating}>({menu.rating})</div>
+            <p className={style.price}>{menu.price}$</p>
+            {/* <div className={style.rating}>({menu.rating})</div> */}
             <div className={style.button}>
               <UpdateButtonModal
                 text={"Update"}
